@@ -11,7 +11,7 @@ class TipoEnvio {
     string tipo;
 
     public:
-    virtual float CalcularPago() = 0;
+    virtual float CalculoPago() = 0;
     virtual string ObtenerTipo();
 
 };

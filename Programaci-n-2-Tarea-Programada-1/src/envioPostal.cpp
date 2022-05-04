@@ -14,22 +14,22 @@ float EnvioPostal::CalculoPago()
     {
         if (this->kilometros >= 0 && this->kilometros <= 3)
         {
-            this->costoPorKilometraje = 0.300;
-            return this->costoPorKilometraje;
+            this->costo = 0.300;
+            return this->costo;
         }
         else
         {
             if (this->kilometros >= 4 && this->kilometros <= 8)
             {
-                this->costoPorKilometraje = 0.450;
-                return this->costoPorKilometraje;
+                this->costo = 0.450;
+                return this->costo;
             }
             else
             {
                 if (this->kilometros > 0 && this->kilometros <= 3)
                 {
-                    this->costoPorKilometraje = 0.600;
-                    return this->costoPorKilometraje;
+                    this->costo = 0.600;
+                    return this->costo;
                 }
             }
             
@@ -41,22 +41,22 @@ float EnvioPostal::CalculoPago()
     {
         if (this->kilometros >= 0 && this->kilometros <= 3)
         {
-            this->costoPorKilometraje = 0.0280;
-            return this->costoPorKilometraje;
+            this->costo = 0.0280;
+            return this->costo;
         }
         else
         {
             if (this->kilometros >= 4 && this->kilometros <= 8)
             {
-                this->costoPorKilometraje = 0.0530;
-                return this->costoPorKilometraje;
+                this->costo = 0.0530;
+                return this->costo;
             }
             else
             {
                 if (this->kilometros > 0 && this->kilometros <= 3)
                 {
-                    this->costoPorKilometraje = 0.0750;
-                    return this->costoPorKilometraje;
+                    this->costo = 0.0750;
+                    return this->costo;
                 }
             }
             
@@ -66,8 +66,8 @@ float EnvioPostal::CalculoPago()
 
     if (this->clase == "tercera")
     {
-        this->costoPorKilometraje = 0.0120;
-        return this->costoPorKilometraje;
+        this->costo = 0.0120;
+        return this->costo;
     }
     
     

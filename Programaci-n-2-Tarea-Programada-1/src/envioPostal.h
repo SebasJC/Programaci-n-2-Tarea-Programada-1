@@ -8,11 +8,11 @@ using namespace std;
 class EnvioPostal : public TipoEnvio {
 
     string clase;
-    float costoPorKilometraje;
+    float costo;
     int kilometros;
 
     public:
-    EnvioPostal(float costoPorKilometraje, int kilometros, string clase);
+    EnvioPostal(float costo, int kilometros, string clase);
 
     virtual float CalculoPago(); 
     virtual string ObtenerClase();

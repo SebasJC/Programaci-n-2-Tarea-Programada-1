@@ -1,5 +1,5 @@
 En este programa se sacan costos de diferentes tipos de envíos que luego se suman para sacar el costo total;
-Los diferentes tipos de envíos que se comparan son los envíos por Servicio Postal y los envíos por FedEx, cada uno con condiciones diferentes, el de Servicio Postal por distancia y el de FedEx por distancia y por tiempo. Se pueden agregar o cambiar los envíos en el archivo "main.cpp".
+Los diferentes tipos de envíos que se comparan son los envíos por Servicio Postal y los envíos por FedEx, cada uno con condiciones diferentes, el de Servicio Postal por distancia y el de FedEx por distancia y por tiempo. Se pueden agregar o cambiar los envíos en el archivo "main.cpp", por defecto, el costo debe empezar siendo 0 para que el programa determine el costo real final después.
 
 Para compilar el código y generar un archivo de código ya compilado, se debe usar el comando "make" en la terminal, que iniciará la compilación con las instrucciiones ya programadas.
 

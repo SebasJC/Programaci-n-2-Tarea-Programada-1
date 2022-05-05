@@ -7,6 +7,7 @@
 using namespace std;
 
 int main() {
+    float costoTotal = 0;
 
     vector<TipoEnvio *> envios;
 
@@ -18,15 +19,17 @@ int main() {
 
 
     //Falta terminar
-    for (Empleado* empleado : empleados)
+    for (TipoEnvio* envio : envios)
     {
-        std::cout << empleado->ObtenerNombre() 
+        std::cout << envio->ObtenerTipo() 
                   << ": " 
-                  << empleado->CalculoPago() 
+                  << envio->CalculoPago() 
                   << std::endl;
+                  
+        costoTotal = costoTotal + envio->CalculoPago();
     }
 
-    delete empleado1;
-    delete empleado2;
+    delete envio1;
+    delete envio2;
 
 }

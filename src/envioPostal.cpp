@@ -14,21 +14,21 @@ float EnvioPostal::CalculoPago()
     {
         if (this->kilometros >= 0 && this->kilometros <= 3)
         {
-            this->costo = 0.300;
+            this->costo = 0.300 * kilometros;
             return this->costo;
         }
         else
         {
             if (this->kilometros >= 4 && this->kilometros <= 8)
             {
-                this->costo = 0.450;
+                this->costo = 0.450 * kilometros;
                 return this->costo;
             }
             else
             {
                 if (this->kilometros > 0 && this->kilometros <= 3)
                 {
-                    this->costo = 0.600;
+                    this->costo = 0.600 * kilometros;
                     return this->costo;
                 }
             }
@@ -41,21 +41,21 @@ float EnvioPostal::CalculoPago()
     {
         if (this->kilometros >= 0 && this->kilometros <= 3)
         {
-            this->costo = 0.0280;
+            this->costo = 0.0280 * kilometros;
             return this->costo;
         }
         else
         {
             if (this->kilometros >= 4 && this->kilometros <= 8)
             {
-                this->costo = 0.0530;
+                this->costo = 0.0530 * kilometros;
                 return this->costo;
             }
             else
             {
                 if (this->kilometros > 0 && this->kilometros <= 3)
                 {
-                    this->costo = 0.0750;
+                    this->costo = 0.0750 * kilometros;
                     return this->costo;
                 }
             }

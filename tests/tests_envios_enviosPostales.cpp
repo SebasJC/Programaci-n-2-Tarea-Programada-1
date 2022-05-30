@@ -9,7 +9,7 @@ namespace
         EnvioPostal envio(0, 2, "primera");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.300;
+        float esperada = 0.600;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -20,7 +20,7 @@ namespace
         EnvioPostal envio(0, 6, "primera");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.450;
+        float esperada = 2.700;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -31,7 +31,7 @@ namespace
         EnvioPostal envio(0, 11, "primera");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.600;
+        float esperada = 6.600;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -42,7 +42,7 @@ namespace
         EnvioPostal envio(0, 2, "segunda");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.0280;
+        float esperada = 0.600;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -53,7 +53,7 @@ namespace
         EnvioPostal envio(0, 6, "segunda");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.0530;
+        float esperada = 3.180;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -64,7 +64,7 @@ namespace
         EnvioPostal envio(0, 11, "segunda");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.0750;
+        float esperada = 8.2500;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -75,7 +75,7 @@ namespace
         EnvioPostal envio(0, 2, "tercera");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.0120;
+        float esperada = 0.0240;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -86,7 +86,7 @@ namespace
         EnvioPostal envio(0, 6, "tercera");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.0120;
+        float esperada = 0.0720;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
@@ -97,7 +97,7 @@ namespace
         EnvioPostal envio(0, 11, "tercera");
 
         float actual = envio.CalculoPago();
-        float esperada = 0.0120;
+        float esperada = 0.0132;
 
         EXPECT_FLOAT_EQ(esperada, actual);
     }
